@@ -1,7 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: {
+    absolute: "First Post",
+  },
 };
 
 export default function FirstPost() {
