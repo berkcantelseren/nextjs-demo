@@ -15,7 +15,11 @@ export default function AuthLayout({
     <div>
       {navLinks.map((link) => {
         return (
-          <Link href={link.href} key={link.name}>
+          <Link
+            href={link.href}
+            key={link.name}
+            className="ml-20 text-2xl text-yellow-600"
+          >
             {link.name}
           </Link>
         );
