@@ -11,7 +11,12 @@ export default function OrderProduct() {
   return (
     <>
       <h1>Order Product</h1>
-      <button onClick={handleClick}>Place Order</button>
+      <button
+        className="border bg-white text-black text-bold text-2xl p-5 ml-40"
+        onClick={handleClick}
+      >
+        Place Order
+      </button>
     </>
   );
 }
