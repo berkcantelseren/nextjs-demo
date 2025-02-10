@@ -20,7 +20,11 @@ export default function AuthLayout({
   return (
     <div>
       <div>
-        <input value={input} onChange={(e) => setInput(e.target.value)} />
+        <input
+          className="text-black"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
       </div>
       {navLinks.map((link) => {
         const isActive = pathName.startsWith(link.href) && link.href !== "";
