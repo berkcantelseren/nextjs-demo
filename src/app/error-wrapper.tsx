@@ -33,7 +33,7 @@ export const ErrorWrapper = ({ children }: WrapperProps) => {
       <div className="absolute top-0 left-4 -translate-y-1/2">
         <ErrorSimulator message="Simulated error in root layout" />
       </div>
-      <ErrorWrapper>{children}</ErrorWrapper>
+      {children}
     </div>
   );
 };
