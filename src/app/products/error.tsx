@@ -20,7 +20,7 @@ export default function ErrorBoundary({
   return (
     <div>
       <p>{error.message}</p>
-      <button onClick={() => reload()}>Try Again! </button>
+      <button onClick={reload}>Try Again! </button>
     </div>
   );
 }
