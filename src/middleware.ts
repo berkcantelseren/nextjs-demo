@@ -8,3 +8,5 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: "/profile",
 };
+
+// if(request.nextUrl.pathname === "/profile") second path
