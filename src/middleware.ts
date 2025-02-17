@@ -8,6 +8,8 @@ export function middleware(request: NextRequest) {
     response.cookies.set("theme", "dark");
   }
 
+  response.headers.set("custom-header", "custom-value");
+
   return response;
   //  return NextResponse.rewrite(new URL("/", request.url));
 }
